@@ -1,0 +1,1 @@
+java -jar /home/oarrua/PaDEL-Descriptor/PaDEL-Descriptor.jar -removesalt -detectaromaticity -2d -dir 1awi_ligand.smi -file check.csv

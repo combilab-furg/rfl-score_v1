@@ -1,0 +1,7 @@
+java -jar -Xmx20G PaDEL-Descriptor.jar -removesalt -standardizenitro -standardizetautomers -dir ZINC000008383181.smi -file  result.csv
+
+
+java -jar PaDEL-Descriptor.jar -removesalt -detectaromaticity -2d -dir /home/oarrua/Desktop/check_padelpy -file  /home/oarrua/Desktop/check_results/check.csv
+
+
+/home/oarrua/Desktop/check_padelpy

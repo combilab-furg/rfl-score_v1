@@ -1,0 +1,20 @@
+#Tue Jan 14 14:37:06 UYT 2020
+MaxThreads=-1
+DescriptorFile=
+Compute3D=false
+TautomerFile=
+ComputeFingerprints=false
+Directory=
+MaxCpdPerFile=0
+StandardizeTautomers=false
+StandardizeNitro=true
+RetainOrder=true
+RemoveSalt=true
+MaxJobsWaiting=-1
+MaxRunTime=-1
+UseFilenameAsMolName=false
+Log=true
+DetectAromaticity=true
+Compute2D=true
+Retain3D=false
+Convert3D=No

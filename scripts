@@ -1,0 +1,29 @@
+# Score
+
+python sf160.py -r examples/1a30/1a30_protein.pdb -f examples/1a30/1A30.fasta.txt -l examples/1a30/1a30_ligand.mol2 -n 1a30 -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160.py -r examples/1g2k/1g2k_protein.pdb -f examples/1g2k/1G2K.fasta.txt -l examples/1g2k/1g2k_ligand.mol2 -n 1g2k -o /home/oarrua/Desktop/Test
+python sf160.py -r examples/1k1i/1k1i_protein.pdb -f examples/1k1i/1K1I.fasta.txt -l examples/1k1i/1k1i_ligand.mol2 -n 1k1i -o /home/oarrua/Desktop/Test
+python sf160.py -r examples/1vso/1vso_protein.pdb -f examples/1vso/1VSO.fasta.txt -l examples/1vso/1vso_ligand.mol2 -n 1vso -o /home/oarrua/Desktop/Test
+python sf160.py -r examples/3utu/3utu_protein.pdb -f examples/3utu/3utu_protein.fasta -l examples/3utu/3utu_ligand.mol2 -n 3utu -o /home/oarrua/Desktop/Test -m examples/3utu/3utu_protein.mol2
+python sf160.py -g examples/list_example -n all -o /home/oarrua/Desktop/Test
+python sf160.py -g examples/list_example_mol2 -n all -o /home/oarrua/Desktop/Test
+
+# Score Mini
+python sf160_mini.py -n 1a30_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/1a30/1a30_160_input.csv -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160_mini.py -n 1g2k_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/1g2k/1g2k_160_input.csv -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160_mini.py -n 1k1i_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/1k1i/1k1i_160_input.csv -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160_mini.py -n 1vso_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/1vso/1vso_160_input.csv -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160_mini.py -n 3utu_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/3utu/3utu_160_input.csv -o /home/oarrua/Desktop/Test -t /home/oarrua/Desktop/Test
+python sf160_mini.py -n all_160 -i /home/oarrua/Desktop/rfl-score_v1/examples/all_160_input.csv -o /home/oarrua/Desktop/Test
+
+# Descriptors
+python sf723_descriptors.py -r examples/1a30/1a30_protein.pdb -f examples/1a30/1A30.fasta.txt -l examples/1a30/1a30_ligand.mol2 -n 1a30 -o /home/oarrua/Desktop/Test -x "amino20 dssp34 nn350 pd92 rdkt2d147 rdkt3d11 sasa10 vina58 deltavina20"
+python sf723_descriptors.py -r examples/1g2k/1g2k_protein.pdb -l examples/1g2k/1g2k_ligand.mol2 -n 1g2k -o /home/oarrua/Desktop/Test -x "vina58"
+python sf723_descriptors.py -r examples/1k1i/1k1i_protein.pdb -f examples/1k1i/1K1I.fasta.txt -l examples/1k1i/1k1i_ligand.mol2 -n 1k1i -o /home/oarrua/Desktop/Test -x "vina58 amino20"
+python sf723_descriptors.py -r examples/1vso/1vso_protein.pdb -f examples/1vso/1VSO.fasta.txt -l examples/1vso/1vso_ligand.mol2 -n 1vso -o /home/oarrua/Desktop/Test -x "amino20"
+python sf723_descriptors.py -r examples/3utu/3utu_protein.pdb -f examples/3utu/3utu_protein.fasta -l examples/3utu/3utu_ligand.mol2 -n 3utu -o /home/oarrua/Desktop/Test -m examples/3utu/3utu_protein.mol2 -x "nn350"
+
+python sf723_descriptors.py -g examples/list_example_with_amino20 -n all -o /home/oarrua/Desktop/Test -x "amino20 dssp34 nn350 pd92 rdkt2d147 rdkt3d11 sasa10 vina58 deltavina20"
+python sf723_descriptors.py -g examples/list_example_without_amino20 -n all_vina58 -o /home/oarrua/Desktop/Test -x "vina58"
+python sf723_descriptors.py -g examples/list_example_with_amino20 -n all_amino20 -o /home/oarrua/Desktop/Test -x "amino20"
+python sf723_descriptors.py -g examples/list_example_mol2 -n all -o /home/oarrua/Desktop/Test -x "amino20 dssp34 nn350 pd92 rdkt2d147 rdkt3d11 sasa10 vina58 deltavina20"
