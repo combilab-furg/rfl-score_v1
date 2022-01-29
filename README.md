@@ -42,19 +42,22 @@ export MGLUTIL=$MGL/MGLToolsPckgs/AutoDockTools/Utilities24/
 # Set vina4v
 export VINADIR=/home/myuser/vina4dv/build/linux/release/ 
 ````
-
-The **DSSP (hydrogen bond estimation algorithm)** program was designed by Wolfgang Kabsch and Chris Sander and calculate the secondary structure assignment given the 3D structure of a protein. To install the DSSP run the following statement:
-
+The **DSSP (hydrogen bond estimation algorithm)** program was designed by Wolfgang Kabsch and Chris Sander and calculate the secondary structure assignment given the 3D structure of a protein. To install the **DSSP** run the following statement:
 ````
 sudo apt-get install -y dssp
 ````
-
-The **Java Runtime Environment** (JRE) is a software layer to run Java programs. **PaDEL-Descriptor** is a program written in Java, it is inside the implementation of the scoring function and it is used to calculate ligand features. To install the JRE run the following statement:
-
+The **Java Runtime Environment** (JRE) is a software layer to run Java programs. **PaDEL-Descriptor** is a program written in Java, it is inside the implementation of the scoring function and it is used to calculate ligand features. To install the **JRE** run the following statement:
 ````
 sudo apt install default-jre
 ````
-
+**R** is an integrated suite of software facilities for data science. The scoring function developed for this work was trained with **R**. To install the **R** run the following statement:
+````
+sudo apt install r-base
+````
+To train **RFL-Score**, the **Random Forest** machine learning algorithm was used, so it is necessary to install its corresponding package within **R**. Therefore, within the R console execute the following statement:
+````
+install.packages("randomForest")
+````
 ## Scoring Function
 
 ### Score
