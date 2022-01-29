@@ -3,7 +3,6 @@
 This function defined as RFL-Score was trained using the PDBBind 2018 (general)  and CSAR (decoys  and NRC HiQ). From these complexes we extract molecular descriptors using BiNANA, RDKit 2D/3D, SASA, PaDEL-Descriptor, Vina, totaling 723 descriptors. Then, we selected the most promising attributes using LassoCV and parametrized a Random Forest (RF) algorithm using the GridSearchCV. This RF model was validated using CASF 2013 and 2016.
 
 ## Requirements
----------
 
   * Python 3.7+
   * MGLTools 1.5.6
@@ -21,7 +20,6 @@ This function defined as RFL-Score was trained using the PDBBind 2018 (general) 
   * Random Forest Package 4.6.14+
 
 ## Install
----------
 
 ### Conda Environment and Packages
 
@@ -58,12 +56,10 @@ sudo apt install default-jre
 ````
 
 ## Scoring Function
----------
 
 ### Score
 
 ### Descriptors
 
 ## Reference
----------
 
