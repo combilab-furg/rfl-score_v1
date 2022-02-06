@@ -166,4 +166,7 @@ python sf723_descriptors.py -g examples/list_example_with_amino20 -n all -o /hom
 ````
 
 ### Videos
+
+RFL-SCORE Installation Guide: https://www.youtube.com/watch?v=lH0dlUFCz8Y
+
 ## Reference
