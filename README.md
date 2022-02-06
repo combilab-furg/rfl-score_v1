@@ -133,16 +133,19 @@ python sf160.py -g examples/list_example -n all -o /home/oarrua/Desktop/Test
 ### Descriptors
 To calculate a set of features of a protein-ligand complex.
 
-**Feature Set**
-* amino20: Related features of amino acid percentages.
-* dssp34:  Related features of the secondary  structure  of  proteins.
-* nn350: NNscore 2.0 features
-* pd92: A set ligand features of PaDEL-Descriptors.
-* rdkt2d147: A set of 2D ligand descriptors of RDKit.
-* rdkt3d11: A set of 3D ligand descriptors of RDKit.
-* sasa10: Related features of solvent-accessible  surface  area.
-* vina58: Vina  implemented  terms.
-* deltavina20: Autodock Vina score.
+**Features Set**
+
+| **Set**     | **Description**                                          |
+|-------------|----------------------------------------------------------|
+| amino20     | Related features of amino acid percentages.              |
+| dssp34      | Related features of the secondary structure of proteins. |
+| nn350       | NNscore 2.0 features                                     |
+| pd92        | A set ligand features of PaDEL-Descriptors.              |
+| rdkt2d147   | A set of 2D ligand descriptors of RDKit.                 |
+| rdkt3d11    | A set of 3D ligand descriptors of RDKit.                 |
+| sasa10      | Related features of solvent-accessible surface area.     |
+| vina58      | Vina implemented terms.                                  |
+| deltavina20 | Autodock Vina score.                                     |
 
 Params:
   * **-r:** Protein's file path. **PDB** format is mandatory.
@@ -161,7 +164,6 @@ A protein-ligand list example:
 ````
 python sf723_descriptors.py -g examples/list_example_with_amino20 -n all -o /home/oarrua/Desktop/Test -x "amino20 dssp34 nn350 pd92 rdkt2d147 rdkt3d11 sasa10 vina58 deltavina20"
 ````
-
 
 ### Videos
 ## Reference
