@@ -2,12 +2,35 @@ import os, sys
 import pandas as pd
 import re
 
+# https://github.com/PDB-REDO/dssp/issues/1
+# CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
+
+cryst1 = 'CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1'
+
 def get_columns():
     dssp = ['D' + str(i+1) for i in range(34)]
     return dssp
 
+def add_cryst1_line(receptor, tmp_folder_name, name):
+    
+    pdb_tmp_path = os.path.join(tmp_folder_name, name + '_temp.pdb');
+    
+    flag = 0;
+    with open(pdb_tmp_path, 'a') as tmp:
+        with open(receptor, 'r') as f:
+            for line in f:
+                if ('ATOM' in line) and flag == 0:                    
+                    line = cryst1 + '\n' + line
+                    flag = flag + 1
+                tmp.write(line)
+    
+    return pdb_tmp_path
+
 def execute_dssp(receptor, tmp_folder_name, name):
-    command = "dssp -i " + receptor + " -o " + os.path.join(tmp_folder_name, name + ".dssp")
+
+    pdb_tmp_path = add_cryst1_line(receptor, tmp_folder_name, name);
+    
+    command = "dssp -i " + pdb_tmp_path + " -o " + os.path.join(tmp_folder_name, name + ".dssp")
     print(command)
     os.system(command)    
 
@@ -201,4 +224,3 @@ def get_dssp34_descriptors(receptor, tmp_folder_name, name):
     dt = get_descriptors(tmp_folder_name = tmp_folder_name, name = name)
     
     return dt
-
