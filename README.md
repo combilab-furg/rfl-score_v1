@@ -7,7 +7,7 @@ This function defined as RFL-Score was trained using the PDBBind 2018 (general) 
   * Python 3.7+
   * MGLTools 1.5.6
   * vina4dv
-  * DSSP 3.0.0+
+  * DSSP 4.0.4
   * JRE 11.0.10+
   * Pandas 1.1.3+
   * Biopython 1.78+
@@ -168,5 +168,9 @@ python sf723_descriptors.py -g examples/list_example_with_amino20 -n all -o /hom
 ### Videos
 
 RFL-SCORE Installation Guide: https://www.youtube.com/watch?v=lH0dlUFCz8Y
+
+### Reviews
+
+  * Supporting for DSSP 4.0.4 (04-27-2024)
 
 ## Reference
