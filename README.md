@@ -175,4 +175,6 @@ RFL-SCORE Installation Guide: https://www.youtube.com/watch?v=lH0dlUFCz8Y
 
 ## Reference
 
-Arrua, Oscar E., et al. "RFL-Score: Random Forest with Lasso Scoring Function for Protein-Ligand Molecular Docking." 2024 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB). IEEE, 2024.
+Arrua, O. E., Aderhold, A., Werhli, A. V., & Machado, K. D. S. (2024, August). RFL-Score: Random Forest with Lasso Scoring Function for Protein-Ligand Molecular Docking. In 2024 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB) (pp. 1-8). IEEE.
+
+[RFL-Score: Random Forest with Lasso Scoring Function for Protein-Ligand Molecular Docking](https://doi.org/10.1109/CIBCB58642.2024.10702128)
