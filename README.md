@@ -174,3 +174,5 @@ RFL-SCORE Installation Guide: https://www.youtube.com/watch?v=lH0dlUFCz8Y
   * Supporting for DSSP 4.0.4 (04-27-2024)
 
 ## Reference
+
+Arrua, Oscar E., et al. "RFL-Score: Random Forest with Lasso Scoring Function for Protein-Ligand Molecular Docking." 2024 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB). IEEE, 2024.
